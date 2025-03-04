@@ -1,37 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Estilização */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    min-height: 100vh;
-    font-family: 'Oswald', sans-serif;
-}
-
-:root {
-    --primary-color: #ffffff;
-    --secondary-color: #141414;
-    --nav-color: #dddddd;
-    --main-color: #c0c0c0;
-    --principal-color: #800000;
-    --header-color: #1b1b1b;
-}
-
-/* Estilização */
-
 /* Header */
 
 .cabecalho {
@@ -42,7 +10,7 @@ body {
     position: fixed;
     z-index: 999;
     width: 100%;
-    background: var(--principal-color);
+    background: var(--crimson);
 }
 
 .cabecalho > .header-contato{
@@ -53,7 +21,7 @@ body {
     height: 30px;
     gap: 20px;
     cursor: default;
-    color: var(--primary-color);
+    color: var(--snow);
     font-family: "Poppins", sans-serif;
 }
 
@@ -75,7 +43,10 @@ body {
     padding: 0 2%;
     width: 100%;
     height: 80px;
-    background: var(--header-color);
+    background: var(--charcoal);
+    -webkit-box-shadow: 0px 1px 4px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 4px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 4px 3px rgba(0,0,0,0.25);
 }
 
 .navbar > .navbar-logo {
@@ -92,7 +63,8 @@ body {
 }
 
 .navbar > .navbar-logo p {
-    color: var(--primary-color);
+    color: var(--snow);
+    cursor: default;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
 }
@@ -109,17 +81,12 @@ body {
     justify-content: center;
     gap: 5px;
     cursor: pointer;
-    color: var(--primary-color);
+    color: var(--snow);
     transition: all 0.55s ease;
 }
 
-.navbar > .navbar-menu ul > li a#active {
-    color: var(--principal-color);
-
-}
-
  .navbar > .navbar-menu ul > li a:hover {
-    color: var(--principal-color);
+    color: var(--crimson);
 }
 
 .cabecalho >  .navbar > .navbar-contato {
@@ -127,21 +94,21 @@ body {
     align-items: center;    
     justify-content: center;
     gap: 5px;
-    background: var(--principal-color);
+    background: var(--crimson);
     padding: 10px 10px;  
     border-radius: 12px;
     transition: all 0.5s ease;
 }
 
 .cabecalho >  .navbar > .navbar-contato i{
-    color: var(--principal-color);
-    background: var(--primary-color);
+    color: var(--crimson);
+    background: var(--snow);
     padding: 5px;
     border-radius: 50%; 
 }
 
 .cabecalho >  .navbar > .navbar-contato a{
-    color: var(--primary-color);
+    color: var(--snow);
     font-family: "Poppins", sans-serif;
     font-size: 14px;
 }
@@ -156,50 +123,133 @@ body {
     width: 100%;
     height: 50dvh;
     margin-top: 110px;
-    background: var(--main-color);
+    background: var(--silver);
 }
 
+/* Serviços */
 .servicos {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50dvh;
-    background: var(--nav-color);
+    height: auto;
+    padding: 20px;
+    background: var(--midnight);
 }
 
+.servicos > .container-servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4%;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.servicos > .container-servicos > .card-servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    gap: 10px;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    color: var(--snow);
+    cursor: default;
+    background: var(--charcoal);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicos > .container-servicos > .card-servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.servicos > .container-servicos > .card-servico i {
+    font-size: 36px;
+    color: var(--crimson);
+    margin-bottom: 10px; 
+}
+
+.servicos > .container-servicos > .card-servico h1 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+
+.servicos > .container-servicos > .card-servico p {
+    font-size: 16px;
+    line-height: 1.5; 
+}
+
+/* Sobre Nós */
 .sobre-nos{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 0;
     width: 100%;
-    height: 100dvh;
-    background: var(--principal-color);
+    height: 70dvh;
+    background: url(../img/foto-oficina.jpg); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sobre-nos::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
 }
 
 .sobre-nos > .cta-sobre-nos {
     display: flex;
     align-items: center;
-    padding: 0 4%;
     gap: 30px;
     width: 100%;
     height: 100dvh;
 }
 
-.sobre-nos > .cta-sobre-nos h1{
-    color: var(--primary-color);
+.sobre-nos > .cta-sobre-nos > .text-sobre-nos{
+    color: var(--snow);
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    text-align: justify;
     width: 50%;
+    gap: 30px;
+    padding: 0 4%;
 }
 
-.sobre-nos .cta-sobre-nos img{
-    width: 500px;
-    height: 500px;
-    border-radius: 12px;
+.sobre-nos > .cta-sobre-nos > .text-sobre-nos h1{
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
+.sobre-nos > .cta-sobre-nos > .text-sobre-nos hr {
+    width: 200px;
+    height: 5px;
+    background: var(--crimson);
+    border: none;
+}
+
+.sobre-nos > .cta-sobre-nos > .text-sobre-nos p{
+    
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* Contato */
 .contato {
     display: flex;
     align-items: center;
@@ -207,8 +257,8 @@ body {
     gap: 30px;
     padding: 0 4%;
     width: 100%;
-    height: 100dvh;
-    background: var(--secondary-color);
+    height: 80dvh;
+    background: var(--midnight);
 }
 
 .contato > form{
@@ -216,12 +266,12 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 15px 25px;
-    gap: 20px;  
-    width: 450px;  
-    height: 450px;
-    color: var(--primary-color);
-    background: var(--header-color);
-    border-radius: 20px;
+    gap: 15px;  
+    width: 400px;  
+    height: 400px;
+    color: var(--snow);
+    background: var(--charcoal);
+    border-radius: 12px;
 }
 
 .contato > form h2{
@@ -229,109 +279,87 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -40px;
+    top: -15px;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
 }
 
-.contato input, .contato select, textarea {
-    color: var(--primary-color);
-    background: var(--header-color);
-    border: 1px solid #c1c1c1;
+.contato input, .contato select {
+    color: var(--snow);
+    background: var(--charcoal);
+    border: 1px solid var(--silver);
     border-radius: 12px;
     padding: 10px;
 }
 
+.contato input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--charcoal) inset;
+    color: var(--snow);
+}
+
 .contato input::placeholder {
     font-size: 12px;
-    color: #c0c0c0; 
-    font-style: italic; 
+    color: var(--silver); 
 }
 
 .contato button {
-    display: flex;
+    display: inline-block;
     align-items: center;
-    padding: 0 4%;
+    justify-content: center;
+    color: var(--snow);
+    background: var(--charcoal);
+    border: 1px solid var(--silver);
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    transition: all 0.55s ease;
+}
+
+.contato button:hover {
+    color: var(--charcoal);
+    background-color: var(--snow);
+}
+
+.contato > iframe{
+    width: 400px;
+    height: 400px;
+    border: 5px solid var(--silver);
+    border-radius: 12px;
+}
+
+option {
+    background-color: var(--charcoal);
+    color: var(--crimson); 
+}
+
+textarea { 
+    resize: none;
+    overflow: auto;
     width: 100%;
-    height: 100dvh;
-    background: var(--secondary-color);
+    height: 100px;
+    padding: 5px;
+    color: var(--snow);
+    background: var(--charcoal);
+    border: 1px solid var(--silver);
 }
 
-.contato > form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 15px 25px;
-    gap: 20px;  
-    width: 450px;  
-    height: 450px;
-    color: var(--primary-color);
-    background: var(--header-color);
-    border-radius: 20px;
+textarea::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px;
 }
 
-.contato > form h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -40px;
-    font-family: "Poppins", sans-serif;
-    font-size: 22px;
+textarea::-webkit-scrollbar-thumb:hover {
+    cursor: pointer; 
 }
 
-.contato input, .contato select, textarea {
-    color: var(--primary-color);
-    background: var(--header-color);
-    border: 1px solid #c1c1c1;
-    border-radius: 12px;
-    padding: 10px;
+textarea::-webkit-scrollbar-track {
+    background: transparent;  
 }
 
-.contato input::placeholder {
-    font-size: 12px;
-    color: #c0c0c0; 
-    font-style: italic; 
+textarea::-webkit-scrollbar-thumb {
+    background: var(--crimson);  
 }
 
-.contato button {
-    width: 100px;
-    height: 50px;
-    margin: 0 auto;
-    display: block; 
-    color: var(--primary-color);
-    background: var(--header-color);
-    border: 1px solid #c1c1c1;
-    border-radius: 12px;
-    font-family: "Poppins", sans-serif;
-    font-size: 22px;
-}
-
-.contato > .contato-maps {
-    width: 450px;
-    height: 450px;
-    border: 1px solid #c1c1c1;
-    border-radius: 12px;
-}
-
-option {
-    background-color: var(--header-color);
-    color: var(--primary-color); 
-}
-
-textarea { 
-    resize: none;
-}
-
-
-option {
-    background-color: var(--header-color);
-    color: var(--primary-color); 
-}
-
-textarea { 
-    resize: none;
-}
 
 
 

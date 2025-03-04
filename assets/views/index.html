@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oficina de Assistência Técnica</title>
+    <title>Oficina do Fábio</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
 
 
@@ -58,19 +59,19 @@
 
         <div class="container-servicos">
 
-            <div class="card-servico">
+            <div class="card-servico" id="reveal-fade">
                 <i class="fa-solid fa-wrench"></i>
                 <h1>Diagnóstico e Manutenção Completa</h1>
                 <p>Analisamos seu equipamento e realizamos manutenção preventiva e corretiva para garantir o melhor desempenho.</p>
             </div>
 
-            <div class="card-servico">
+            <div class="card-servico" id="reveal-fade">
                 <i class="fa-solid fa-gear"></i>
                 <h1>Peças Originais e de Qualidade</h1>
                 <p>Trabalhamos com peças de reposição de alta qualidade para aumentar a durabilidade do seu equipamento.</p>
             </div>
 
-            <div class="card-servico">
+            <div class="card-servico" id="reveal-fade">
                 <i class="fa-solid fa-clock"></i>
                 <h1>Atendimento Rápido e Especializado</h1>
                 <p>Nossa equipe está pronta para oferecer suporte técnico e esclarecer dúvidas sobre seu equipamento.</p>
@@ -83,23 +84,24 @@
     <section class="sobre-nos" id="sobre-nos">
 
         <div class="cta-sobre-nos">
-            <h1>A Oficina do Fábio é referência em reparo e manutenção de equipamentos motorizados em Itápolis-SP. Há 10 anos, atuamos com compromisso e excelência no conserto de motosserras, lavadoras de alta pressão, cortadores de grama e diversos outros equipamentos.
+            <div class="text-sobre-nos" id="reveal-left">
+            <h1>Sobre Nós</h1>
+            <hr>
+            <p>A Oficina do Fábio é referência em reparo e manutenção de equipamentos motorizados em Itápolis-SP. Há 10 anos, atuamos com compromisso e excelência no conserto de motosserras, lavadoras de alta pressão, cortadores de grama e diversos outros equipamentos.
 
                 Localizada na Av. Carlos Adolfson, 2179, nossa oficina conta com profissionais qualificados e experientes, sempre prontos para oferecer soluções rápidas e eficientes. Trabalhamos com peças de qualidade e serviços que garantem o melhor desempenho dos seus equipamentos.
                 
-                Confiança, transparência e dedicação fazem parte do nosso dia a dia. Traga seu equipamento para a Oficina do Fábio e conte com um atendimento especializado!</h1>
-        
-            <img src="../img/foto-oficina.jpg" alt="Foto Oficina">
+                Confiança, transparência e dedicação fazem parte do nosso dia a dia. Traga seu equipamento para a Oficina do Fábio e conte com um atendimento especializado!</p>
+            </div>
         
             </div>
         
     </section>
 
     <section class="contato" id="contato">
-
-        
-            <form>
-                <h2>Entre em contato conosco</h2>
+      
+            <form id="reveal-bottom">
+                <h2>Entre em contato</h2>
                 <input type="text" placeholder="Nome">
                 <select>
                     <option value="" disabled selected>Escolha um serviço</option>
@@ -115,16 +117,16 @@
                 <input type="text" id="telefone" maxlength="15" placeholder="(99) 99999-9999">
                 <textarea name="" id="" placeholder="Mensagem"></textarea>
                 <button>Enviar</button>
-            </form>
+            </form> 
+            
+            <iframe id="reveal-bottom" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14839.249673126882!2d-48.824972!3d-21.593244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94becf42943e332d%3A0xbdbd6554e5ac2915!2sOficina%20Do%20F%C3%A1bio!5e0!3m2!1spt-BR!2sbr!4v1740361380426!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <iframe class="contato-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14839.249673126882!2d-48.824972!3d-21.593244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94becf42943e332d%3A0xbdbd6554e5ac2915!2sOficina%20Do%20F%C3%A1bio!5e0!3m2!1spt-BR!2sbr!4v1740361380426!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
 
-    <footer>
-
-    </footer>
+   <div class="botao-voltar">
     
+   </div> 
 
     <script src="../js/script.js"></script>
     <script src="../js/reveal.js"></script>
