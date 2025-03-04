@@ -1,31 +1,41 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-    event.ppreventDefault();    
+document.getElementById('enviar').addEventListener('click', function() {
+    const nome = document.getElementById('nome');
+    const servico = document.getElementById('servico');
 
-    let nome = document.querySelector(".form-nome").value;
-    const problema = document.querySelector(".form-problema").value;
-    let mensagem = document.querySelector(".form-mensagem").value;
+    // Remover classes de erro anteriores
+    nome.classList.remove('input-error');
+    servico.classList.remove('input-error');
 
-    let numeroWhatsApp = "5516997126943";
-    let mensagemWhatsApp = `Olá, meu nome é ${nome} e estou com o seguinte problema: ${problema}. ${mensagem}`;
-
-    window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagemWhatsApp}`, "_blank");
-
-
-});
-
-document.getElementById("telefone").addEventListener("input", function (e) {
-    let numero = e.target.value.replace(/\D/g, ""); // Remove tudo que não for número
-
-    // Aplica a formatação (XX) XXXXX-XXXX
-    if (numero.length > 10) {
-        numero = numero.replace(/^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
-    } else if (numero.length > 6) {
-        numero = numero.replace(/^(\d{2})(\d{4})/, "($1) $2-");
-    } else if (numero.length > 2) {
-        numero = numero.replace(/^(\d{2})/, "($1) ");
+    // Verificar se os campos estão preenchidos
+    let valid = true;
+    if (!nome.value.trim()) {
+        nome.classList.add('input-error');
+        valid = false;
+    }
+    if (!servico.value) {
+        servico.classList.add('input-error');
+        valid = false;
     }
 
-    e.target.value = numero;
+    if (!valid) {
+        return; 
+    }
+
+    nome.offsetWidth;
+    servico.offsetWidth
+
+    const texto = `Olá, meu nome é ${nome.value.trim()}. Gostaria de solicitar o serviço de ${servico.value}.`;
+
+    const url = `https://wa.me/5516997765591?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
 });
 
+document.getElementById('nome').addEventListener('input', function() {
+    this.classList.remove('input-error');
+    this.classList.add('input-verified');
+});
 
+document.getElementById('servico').addEventListener('change', function() {
+    this.classList.add('input-verified');
+});

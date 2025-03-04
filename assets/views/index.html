@@ -29,8 +29,7 @@
 
     <nav class="navbar">
         <div class="navbar-logo">
-            <img src="../img/logo.png" alt="Logo">
-            <hr>
+            <img src="../img/logo_oficina.png" alt="Logo">
             <p>Oficina do Fábio</p>
         </div>
 
@@ -52,7 +51,13 @@
 
 
     <main class="main" id="main">
-
+        <div class="intro" id="reveal-top">
+            <div class="intro-text">
+            <h1>Bem-vindo à Oficina do Fábio</h1>
+            <p>Oferecemos serviços de manutenção e reparo de alta qualidade para uma variedade de equipamentos motorizados. Nossa equipe de especialistas está pronta para ajudar você a manter seus equipamentos em perfeito estado de funcionamento.</p>
+        </div>  
+            <a class="scroll-to-contact" href="#contato">Entre em Contato</a>
+        </div>
     </main>
 
     <section class="servicos" id="servicos">
@@ -86,7 +91,6 @@
         <div class="cta-sobre-nos">
             <div class="text-sobre-nos" id="reveal-left">
             <h1>Sobre Nós</h1>
-            <hr>
             <p>A Oficina do Fábio é referência em reparo e manutenção de equipamentos motorizados em Itápolis-SP. Há 10 anos, atuamos com compromisso e excelência no conserto de motosserras, lavadoras de alta pressão, cortadores de grama e diversos outros equipamentos.
 
                 Localizada na Av. Carlos Adolfson, 2179, nossa oficina conta com profissionais qualificados e experientes, sempre prontos para oferecer soluções rápidas e eficientes. Trabalhamos com peças de qualidade e serviços que garantem o melhor desempenho dos seus equipamentos.
@@ -100,24 +104,23 @@
 
     <section class="contato" id="contato">
       
-            <form id="reveal-bottom">
-                <h2>Entre em contato</h2>
-                <input type="text" placeholder="Nome">
-                <select>
-                    <option value="" disabled selected>Escolha um serviço</option>
-                    <option value="revMotosserra">Revisão em motosserras</option>
-                    <option value="revRocadeira">Revisão em roçadeira</option>
-                    <option value="revLavadora">Revisão em lavadoras de pressão</option>
-                    <option value="limpCarburacao">Limpeza de carburação</option>
-                    <option value="reparosLava">Troca de reparos lavajatos</option>
-                    <option value="motorCompleto">Motor a gasolina completo</option>
-                    <option value="motorParcial">Motor a gasolina parcial</option>
-                    <option value="outro"> Outro</option>
-                </select>
-                <input type="text" id="telefone" maxlength="15" placeholder="(99) 99999-9999">
-                <textarea name="" id="" placeholder="Mensagem"></textarea>
-                <button>Enviar</button>
-            </form> 
+        <form id="reveal-bottom">
+            <h2>Entre em contato</h2>
+            <input type="text" id="nome" placeholder="Nome">
+            <select id="servico">
+                
+                <option value="" disabled selected>Serviços</option>
+                <option value="Revisão em motosserras">Revisão em motosserras</option>
+                <option value="Revisão em roçadeira">Revisão em roçadeira</option>
+                <option value="Revisão em lavadoras de pressão">Revisão em lavadoras de pressão</option>
+                <option value="Limpeza de carburação">Limpeza de carburação</option>
+                <option value="Troca de reparos lavajatos">Troca de reparos lavajatos</option>
+                <option value="Motor a gasolina completo">Motor a gasolina completo</option>
+                <option value="Motor a gasolina parcial">Motor a gasolina parcial</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <button type="button" id="enviar">Enviar</button>
+        </form>
             
             <iframe id="reveal-bottom" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14839.249673126882!2d-48.824972!3d-21.593244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94becf42943e332d%3A0xbdbd6554e5ac2915!2sOficina%20Do%20F%C3%A1bio!5e0!3m2!1spt-BR!2sbr!4v1740361380426!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
