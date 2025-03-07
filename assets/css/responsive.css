@@ -1,0 +1,117 @@
+@media (max-width: 1024px) {
+    .sobre-nos > .cta-sobre-nos > .text-sobre-nos{
+        color: var(--snow);
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        width: 70%;
+        gap: 30px;
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 850px) {
+    .cabecalho > .navbar  {
+        display: flex;
+        gap: 10px;
+    }
+    .cabecalho > .navbar > .navbar-contato {
+        display: none;
+    }
+
+    .navbar > .navbar-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .cabecalho > .navbar > .navbar-menu > .mobile-navbar-contato {
+        display: flex;
+    }
+
+    .main > .intro > .intro-text h1::after {
+        width: 200px;
+        height: 3px;
+
+    }
+
+    .main > .intro > .intro-text p {
+        font-size: 22px;
+        text-align: justify;
+        text-align-last: center;
+        width: 85%;
+    }
+
+    .servicos > .container-servicos > .card-servico i {
+        font-size: 42px;
+        
+    }
+
+    .servicos > .container-servicos > .card-servico h1 {
+        font-size: 28px;
+    }
+
+    .servicos > .container-servicos > .card-servico p {
+        font-size: 18px;
+    }
+
+    .sobre-nos > .cta-sobre-nos > .text-sobre-nos{
+        color: var(--snow);
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        width: 70%;
+        gap: 30px;
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .sobre-nos::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+    }
+
+    .sobre-nos > .cta-sobre-nos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    .sobre-nos > .cta-sobre-nos > .text-sobre-nos h1{
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    
+    .sobre-nos > .cta-sobre-nos > .text-sobre-nos h1::after {
+        content: "";
+        display: flex;
+        margin: 0 auto;
+        bottom: 0;
+        width: 150px;
+        height: 3px;
+        background: var(--crimson);
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-nos > .cta-sobre-nos > .text-sobre-nos {
+        width: 100%;
+    }
+
+    
+}
+

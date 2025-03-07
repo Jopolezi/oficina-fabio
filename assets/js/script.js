@@ -39,3 +39,34 @@ document.getElementById('nome').addEventListener('input', function() {
 document.getElementById('servico').addEventListener('change', function() {
     this.classList.add('input-verified');
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const main = document.querySelector("main");
+    const btnVoltar = document.querySelector("#botao-voltar");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                btnVoltar.classList.add("visivel");
+            } else {
+                btnVoltar.classList.remove("visivel");
+            }
+        });
+    }, { threshold: 0 });
+
+    observer.observe(main);
+});
+
+function toggleMenu() {
+    const menu = document.querySelector(".navbar-menu");
+    const icon = document.querySelector(".menu-toggle i");
+
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+        icon.classList.replace("fa-bars", "fa-times");
+    } else {
+        icon.classList.replace("fa-times", "fa-bars");
+    }
+}
+
