@@ -116,8 +116,12 @@
         width: 300px;
     }  
 
-    .main > .intro > .intro-text {
-        padding: 0 10px;
+    .scroll-to-contact {
+        margin-top: 0;
+    }
+
+    .main > .intro > .intro-text h1 {
+        font-size: 32px;
     }
 
     .main > .intro > .intro-text p {
