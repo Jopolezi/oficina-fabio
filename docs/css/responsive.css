@@ -115,6 +115,23 @@
     .contato > form, .contato > iframe {
         width: 300px;
     }  
+
+    .main > .intro > .intro-text {
+        padding: 0 10px;
+    }
+
+    .main > .intro > .intro-text p {
+        font-size: 16px;
+    }
+
+    .sobre-nos > .cta-sobre-nos > .text-sobre-nos p {
+        font-size: 16px;
+    }
+
+    .contato {
+        padding: 10px;
+    }
+    
 }
 
 @media (max-width: 768px) {
