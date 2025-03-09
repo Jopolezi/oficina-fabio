@@ -112,6 +112,20 @@
         width: 100%;
     }
 
-    
+    .contato > form, .contato > iframe {
+        width: 300px;
+    }  
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+    .navbar > .navbar-menu {
+        display: none;
+    }
+    .navbar-logo p{
+        display: none;
+    }
 }
 

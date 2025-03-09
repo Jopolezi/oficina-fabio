@@ -57,16 +57,27 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(main);
 });
 
-function toggleMenu() {
-    const menu = document.querySelector(".navbar-menu");
-    const icon = document.querySelector(".menu-toggle i");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuHamburguer = document.getElementById("menuHamburguer");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    const menuLinks = document.querySelectorAll(".menu-link");
 
-    menu.classList.toggle("active");
-
-    if (menu.classList.contains("active")) {
-        icon.classList.replace("fa-bars", "fa-times");
-    } else {
-        icon.classList.replace("fa-times", "fa-bars");
+    function toggleMenu() {
+        mobileMenu.classList.toggle("active");
     }
-}
+
+    menuHamburguer.addEventListener("click", toggleMenu);
+    closeMenu.addEventListener("click", toggleMenu);
+
+    document.addEventListener("click", function (event) {
+        if (!mobileMenu.contains(event.target) && !menuHamburguer.contains(event.target)) {
+            mobileMenu.classList.remove("active");
+        }
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", toggleMenu);
+    });
+});
 

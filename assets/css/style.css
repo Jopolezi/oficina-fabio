@@ -150,18 +150,65 @@
     transform: scale(1.05);
 }
 
-.cabecalho > .navbar > .navbar-menu > .mobile-navbar-contato {
+.menu-hamburguer {
     display: none;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    padding: 12px;
+    font-size: 24px;
     color: var(--snow);
-    background: var(--crimson);
-    border-radius: 50%; 
+    cursor: pointer;
 }
 
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100dvh;
+    background: var(--charcoal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: 0.4s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-menu ul li {
+    margin: 15px 0;
+}
+
+.mobile-menu ul li a {
+    color: var(--snow);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.mobile-menu ul li a:hover {
+    background: var(--crimson);
+}
+
+.close-menu {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--snow);
+}
+
+.mobile-menu.active {
+    right: 0;
+}
 
 .main {
     display: flex;

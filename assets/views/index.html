@@ -18,44 +18,52 @@
 </head>
 <body>
     <header class="cabecalho">
-    
-    <div class="header-contato">
-        <div class="header-contato-phone">
-            <i class="fas fa-phone-alt"></i>
-            <p>+55 (16) 99776-5591</p>
-        </div>
-
-        <div class="header-contato-endereco">
-            <i class="fa-solid fa-map-location-dot"></i>
-            <p>Av. Carlos Adollfson, 2179</p>
-        </div>
-    </div>
-
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="../img/logo_oficina.png" alt="Logo">
-            <p>Oficina do Fábio</p>
-        </div>
-
-        <div class="navbar-menu">
-            <ul>
-                <li><a href="#main" id="active-link">Início</a></li>
-                <li><a href="#servicos" id="active-link">Serviços</a></li>
-                <li><a href="#sobre-nos" id="active-link">Sobre Nós</a></li>
-            </ul>
-
-            <div class="mobile-navbar-contato">
-                <i class="fa-brands fa-whatsapp"></i>
+        <div class="header-contato">
+            <div class="header-contato-phone">
+                <i class="fas fa-phone-alt"></i>
+                <p>+55 (16) 99776-5591</p>
+            </div>
+            <div class="header-contato-endereco">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>Av. Carlos Adollfson, 2179</p>
             </div>
         </div>
-
-        <div class="navbar-contato">
-            <i class="fa-brands fa-whatsapp"></i>
-            <a href="#contato">Faça o seu orçamento</a>  
-        </div>        
-    </nav>
-
-</header>
+    
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="../img/logo_oficina.png" alt="Logo">
+                <p>Oficina do Fábio</p>
+            </div>
+    
+            <div class="menu-hamburguer" id="menuHamburguer">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="#main">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                </ul>
+            </div>
+    
+            <div class="navbar-contato">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="#contato">Faça o seu orçamento</a>  
+            </div>        
+        </nav>
+    
+        <!-- Menu lateral mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-times close-menu" id="closeMenu"></i>
+            <ul>
+                <li><a href="#main" class="menu-link">Início</a></li>
+                <li><a href="#servicos" class="menu-link">Serviços</a></li>
+                <li><a href="#sobre-nos" class="menu-link">Sobre Nós</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
 
 
     <main class="main" id="main">
