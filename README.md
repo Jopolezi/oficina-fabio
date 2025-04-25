@@ -1,41 +1,27 @@
-# 🔧 Oficina do Fábio - Landing Page
+# 🔧 Oficina do Fábio 
 
-Bem-vindo ao repositório da landing page da **Oficina do Fábio**, especializada em **manutenção de ferramentas motorizadas**! ⚙️
+Bem-vindo ao repositório da landing page da **Oficina do Fábio**, especializada em **manutenção de ferramentas motorizadas**!
 
-## 🌟 Sobre o Projeto
+## Sobre o Projeto
 Este projeto é uma landing page desenvolvida para apresentar os serviços da **Oficina do Fábio**, destacando sua experiência, especialidades e formas de contato. A interface foi projetada para ser **moderna, responsiva e intuitiva**, garantindo uma boa experiência para os clientes.
 
-## 🛠️ Tecnologias Utilizadas
-- **HTML5** - Estrutura do site
-- **CSS3** e **Bootstrap** - Estilização e responsividade
-- **JavaScript** - Interações e animações
+***
 
-## 📌 Funcionalidades
-✅ Apresentação dos serviços prestados  
-✅ Seção "Sobre a Oficina" com histórico  
-✅ Formulário de contato para solicitação de orçamentos  
-✅ Links para redes sociais e localização no Google Maps  
-✅ Design responsivo para adaptação em dispositivos móveis e desktops  
+## Tecnologias Utilizadas
+<div style="display: flex;">
+<img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+<img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+<img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+</div>
 
-## 🎨 Layout
-O design segue um **visual profissional e dinâmico**, transmitindo confiança e credibilidade. A paleta de cores utiliza tons sóbrios e industriais, alinhados à identidade da oficina mecânica.
-
-## 🚀 Como Executar o Projeto
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/oficina-fabio.git
-   ```
-2. Acesse a pasta do projeto:
-   ```bash
-   cd oficina-fabio
-   ```
-3. Abra o arquivo `index.html`  em seu navegador preferido.
-
----
+***
 
 💡 *Se gostou do projeto, deixe uma estrela ⭐ e contribua com melhorias!*
 
-## 📞 Contato Profissional
-📧 **E-mail:** joao.polezi@gmail.com 
-📞 **Telefone:** (16) 99712-6943 
-🌐 **Website:** Em desenvolvimento...
+***
+
+## O projeto já está disponível na versão web e você pode conferir em:
+https://oficinadofabio.netlify.app/
+
+
+
